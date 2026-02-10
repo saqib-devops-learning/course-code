@@ -16,3 +16,10 @@ jobs:
       - name: running macos commands
         run: sw_vers  
     
+  dependant-jobs:
+    runs-on: windows-latest
+    needs:
+      - run-shell-commands
+    steps:
+      - name: running windows paralelly
+        run: Write-output "Hi there"
