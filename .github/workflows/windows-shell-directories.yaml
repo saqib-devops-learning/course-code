@@ -32,6 +32,7 @@ jobs:
                     echo $GITHUB_DEFAULT
                     echo $GITHUB_WORKSSPACE 
                 - name: python shell
+                  shell: python
                   run: |
                     import platform
                     print(platform.processor)        
