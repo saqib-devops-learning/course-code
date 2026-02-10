@@ -16,6 +16,9 @@ jobs:
     display-windows-working-diretory:
     
             runs-on: windows-latest
+            defaults:
+              run:
+                shell: pwsh
             needs: 
             - display-ubuntu-working-diretory
            
