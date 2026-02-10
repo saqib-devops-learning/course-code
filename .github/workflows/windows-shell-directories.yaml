@@ -1,0 +1,26 @@
+name: windows-shell-directories
+on: push 
+jobs:
+          
+    display-ubuntu-working-diretory:
+            runs-on: ubuntu-latest
+            steps:
+                - name: commands
+                  run: |
+                    pwd
+                    ls
+                    echo $GITHUB_SHA
+                    echo $GITHUB_REPOSITORY 
+                    echo $GITHUB_DEFAULT
+                    echo $GITHUB_WORKSSPACE 
+    display-windows-working-diretory:
+            runs-on: windows-latest
+            steps:
+                - name: commands
+                  run: |
+                    pwd
+                    ls
+                    echo $GITHUB_SHA
+                    echo $GITHUB_REPOSITORY 
+                    echo $GITHUB_DEFAULT
+                    echo $GITHUB_WORKSSPACE 
