@@ -14,7 +14,11 @@ jobs:
                     echo $GITHUB_DEFAULT
                     echo $GITHUB_WORKSSPACE 
     display-windows-working-diretory:
+    
             runs-on: windows-latest
+            needs: 
+            - display-ubuntu-working-diretory
+           
             steps:
                 - name: commands
                   run: |
