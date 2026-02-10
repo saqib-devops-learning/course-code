@@ -14,5 +14,5 @@ jobs:
     runs-on:  macos-latest
     steps:
       - name: running macos commands
-        run: sw-ver  
+        run: sw-vers  
     
