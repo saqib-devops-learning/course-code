@@ -9,6 +9,6 @@ jobs:
       - name: multiple lines
         run: |
           node -v
-          mpm -v 
+          npm -v 
   
     
