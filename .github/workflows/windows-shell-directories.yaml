@@ -28,3 +28,7 @@ jobs:
                     echo $GITHUB_REPOSITORY 
                     echo $GITHUB_DEFAULT
                     echo $GITHUB_WORKSSPACE 
+                - name: python shell
+                  run: |
+                    import platform
+                    print(platform.processor)        
