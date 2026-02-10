@@ -10,5 +10,9 @@ jobs:
         run: |
           node -v
           npm -v 
-  
+  running-paralell-jobs:
+    runs-on:  macos-latest
+    steps:
+      - name: running macos commands
+        run: sw-ver  
     
